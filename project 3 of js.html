@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Methods</h1>
+    <p>There are many methods to display information like 
+        <ol>
+            <li>Uppercase</li><!--It capitalizes all the letters-->
+            <li>Lowercase</li><!--It puts all the letters to small ones-->
+            <li>Starts with</li><!--It tells if the starting letter is right or not-->
+            <li>Ends with</li><!--It tells if the ending letter is right or not-->
+            <li>Test</li><!--It tests the letter-->
+            <li>random</li><!--It Displays any random number-->
+            <li>floor</li><!--it prints the first letter of a decimal integer-->
+</ol>
+    </p>
+    <h2>Loops</h2>
+    <p>It is used to repeat a statement a number of times.</p>
+    <h4>Loops to print even numbers from 0 to 50</h4><br>
+    <script>
+ for(var i=0;i<=50;i+=2){
+    document.write("<br>")
+    document.write("<br>")
+            document.write(i)
+        }
+    </script>
+    <h5>Loops for vegetables variety in pakistan</h5>
+    <P id="a"></P>
+    <script>
+        document.write("<br>")
+       var fruits=["Tomato","Bitterguord","Lemon","Potato","Onion","Acorn Squash","Alfalfa Sprouts","All Blue Potato","Belgian Endive","Bell Pepper","Bintje Potato","Bitter Melon","Black Bean","Black-Eyed Pea"]
+       var text=""
+       var x
+for(x=0;x<fruits.length;x++){
+    text+=fruits[x]+"<br>"
+}
+document.getElementById("a").innerHTML=text
+    </script>
+    <br>
+    <br>
+    <p id="n"></p><!--Using the switch statement we can tell the current day and date-->
+    <script>
+        var day
+        switch(new Date().getDay() ){
+case 0:
+    day="Sunday";
+    break;
+    case 1:day="Monday" 
+    break;
+    case 2:day="Tuesday" 
+    break; 
+    case 3:day="Wednesday" 
+    break; 
+    case 4:day="Thursday" 
+    break;
+     case 5:day="Friday" 
+    break;
+     case 6:day="Saturday" 
+    break; 
+        }
+        document.getElementById("n").innerHTML=day
+        </script>
+</body>
+</html>
